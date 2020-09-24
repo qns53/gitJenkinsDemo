@@ -7,7 +7,7 @@ stages{
 	
 }
 }
-	stage('test"){
+	stage('build'){
 	steps{
 	echo 'mvn clean package'
 	
