@@ -7,9 +7,21 @@ stages{
 	
 }
 }
-	stage('test"){
+	stage('clean'){
 	steps{
-	echo 'mvn clean package'
+	bat 'mvn clean'
+	
+}
+}
+	stage('test'){
+	steps{
+	bat 'mvn test'
+	
+}
+}
+	stage('build'){
+	steps{
+	bat 'mvn package'
 	
 }
 }
